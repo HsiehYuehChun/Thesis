@@ -4,8 +4,8 @@ clear
 load('D:\AIP\完整版6\JD.mat')
 %第二批資料共有950組檔案
 FN = 1352;
-%先讀取已下載資料中的JD &F10.7序列
-%記得根據表格大小調整讀取範圍
+% 從官方下載的 penticton_radio_flux.xlsx 中讀取 F10.7 太陽通量資料
+% JDseries 是原始時間序列（Julian Date），F107series 是對應的 F10.7 值
 JDseries = xlsread('penticton_radio_flux.xlsx',1,'A2:A4618');
 F107series = xlsread('penticton_radio_flux.xlsx',1,'B2:B4618');
 %看一下總共有幾對資料
